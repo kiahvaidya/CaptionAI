@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-white text-zinc-900 font-sans antialiased selection:bg-zinc-900 selection:text-white;
+  }
+}
+
+/* Custom minimal scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #FAFAFA;
+}
+::-webkit-scrollbar-thumb {
+  background: #D4D4D8;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #A1A1AA;
+}
+
+.glass-panel {
+  background: #FFFFFF;
+  border: 1px solid #E4E4E7;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.04), 0 1px 2px -1px rgba(0, 0, 0, 0.02);
+}
+
+.card-soft {
+  background: #FFFFFF;
+  border: 1px solid #E4E4E7;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.card-soft:hover {
+  border-color: #18181B;
+  box-shadow: 0 8px 24px -4px rgba(0, 0, 0, 0.06);
+}
+
+.gradient-text {
+  @apply text-zinc-950 font-bold;
+}
